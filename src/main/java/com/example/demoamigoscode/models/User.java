@@ -1,4 +1,4 @@
-package com.example.demoamigoscode;
+package com.example.demoamigoscode.models;
 
 import java.util.Objects;
 
