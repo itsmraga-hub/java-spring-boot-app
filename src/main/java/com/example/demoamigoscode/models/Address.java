@@ -1,4 +1,4 @@
-package com.example.demoamigoscode;
+package com.example.demoamigoscode.models;
 
 import jakarta.persistence.*;
 
@@ -11,8 +11,8 @@ public class Address {
     @Column(nullable = false)
     private String location;
 
-    @OneToOne(mappedBy = "address")
-    private Library library;
+//    @OneToOne(mappedBy = "address")
+//    private Library library;
 
     public Address () {
 
