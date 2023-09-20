@@ -20,17 +20,17 @@ public class Product {
     private String category;
     private String description;
 
-    private Long id;
+    private Integer id;
 
     public Product () {
 
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 }

@@ -17,7 +17,7 @@ public class Library {
             strategy = GenerationType.SEQUENCE,
             generator = "library_id_sequence"
     )
-    private long id;
+    private Integer id;
 
     @Column
     private String name;
@@ -25,6 +25,7 @@ public class Library {
 //    @OneToOne
 //    @JoinColumn(name = "address_id")
 //    private Address address;
+
     private String address;
 
     @OneToMany(mappedBy = "library")
@@ -37,14 +38,6 @@ public class Library {
 
     public Library() {
 
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -66,6 +59,10 @@ public class Library {
     public List<Book> getBooks() {
         return books;
     }
+
+//    public List<Book> findLibraryBooks() {
+//        return
+//    }
 
     public void setBooks(List<Book> books) {
         this.books = books;

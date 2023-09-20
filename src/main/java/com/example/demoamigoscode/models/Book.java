@@ -15,7 +15,7 @@ public class Book {
             strategy = GenerationType.SEQUENCE,
             generator = "book_id_sequence"
     )
-    private long id;
+    private Integer id;
 
     @Column(nullable = false)
     private String title;

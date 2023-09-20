@@ -1,7 +1,6 @@
 package com.example.demoamigoscode.controllers;
 
-import com.example.demoamigoscode.SpringBootExample;
-import com.example.demoamigoscode.UserRepository;
+import com.example.demoamigoscode.repositories.UserRepository;
 import com.example.demoamigoscode.models.User;
 import org.springframework.web.bind.annotation.*;
 
